@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f6f1eb;
+        }
+        
+        ul {
+            width: 100%;
+            height: 100px;
+            border-bottom: solid #333;
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: #f6f1eb;
+        }
+
+        li {
+            float: right;
+
+        }
+
+        #content1 {
+            color: black;
+            display: block;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        #content1:hover {
+            color: darkolivegreen;
+            transform: rotateY(0deg) scale(1.25);
+            transition: .5s;
+        }
+
+        li {
+            font-family: NSimsun;
+            padding-top: 50px;
+        }
+
+        #content {
+            padding-right: 250px;
+            position: relative;
+        }
+
+        #content:hover>ul {
+            transform: scaleY(1);
+        }
+
+        #content>ul {
+            box-sizing: border-box;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 113px;
+            height: 97.34px;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: .3s;
+        }
+
+        #content>ul li {
+            box-sizing: border-box;
+            padding: 14px 16px;
+            width: 113px;
+            height: 48.67px;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        #content>ul li>a {
+            color: black;
+            text-decoration: none;
+            font-size: large;
+            display: block;
+        }
+
+
+        #content>ul li>a:hover {
+            color: darkolivegreen;
+            font-size: larger;
+            font-weight: bolder;
+            transition: 0.3s;
+        }
+
+        #header{
+            font-weight: lighter;
+            font-size: 40px;
+            padding-left: 200px;
+            padding-top: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .shell {
+            position: relative;
+            min-width: 1000px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            perspective: 900px;
+            margin-top: 160px;
+        }
+        h2{
+            font-weight: 600;
+            font-family: Microsoft JhengHei;
+        }
+        .shell .box {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            transition: 0.3s;
+            overflow: hidden;
+            margin: 30px;
+            transform: rotateY(0deg);
+            transition-delay: .1s;
+            border-radius: 5px;
+            border: #fff 5px solid;
+        }
+
+        .shell:hover .box {
+            transform: rotateY(20deg);
+        }
+
+        .shell .box:hover {
+            transform: rotateY(0deg) scale(1.25);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .shell .box:hover~.box {
+            transform: rotateY(-20deg);
+        }
+
+        .shell .box .images img {
+            width: 100%;
+        }
+
+        .shell .box .content {
+            position: absolute;
+            top: 0;
+            width: 90%;
+            height: 100%;
+            z-index: 999;
+            padding: 15px;
+        }
+
+        .shell .box .content h2 {
+            color: black;
+            transition: 0.3s;
+            font-size: 20px;
+            transform: translateY(-100px);
+        }
+
+        .shell .box:hover .content h2 {
+            transform: translateY(-15px);
+        }
+
+        .shell .box .content p {
+            color: rgb(0, 0, 0);
+            transition: 0.3s;
+            font-size: 14px;
+            transform: translateY(600px);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .shell .box:hover .content p {
+            transform: translateY(220px);
+        }
+        .top{
+            clear: both;
+            width: 50px;
+            height: 25px;
+            display: block;
+            float: right;
+            margin-right: 150px;
+            background-color: pink;
+            margin-top: 60px;
+            text-align: center;
+            margin-bottom: 200px;
+            border-radius: 20px;
+            border: solid #333 2px;
+            background-color: rgb(255, 240, 221);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="header" style="float:left;">Read with me.</li>
+        <li id="content">
+            <a id="content1" href="index.html">Main page</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">Main</a></li>
+            </ul>
+        </li>
+        <li>
+            <a id="content1" href="social.html">社科</a>
+        </li>
+        <li>
+            <a id="content1" href="poem.html">诗集</a>
+        </li>
+        <li>
+            <a id="content1" href="bio.html">传记</a>
+        </li>
+        <li>
+            <a id="content1" href="magic.html">科幻</a>
+        </li>
+    </ul>
+
+    <div class="shell">
+        
+        <div class="box">
+            <div class="images">
+                <img src="3.1.jpg">
+            </div>
+            <div class="content">
+                <h2>《柏林童年》</h2>
+                <p>"造物主终于回到故乡，可以将被白昼撕掉的寡妇面纱重新为它披上。"</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="images">
+                <img src="4.1.jpg">
+            </div>
+            <div class="content">
+                <h2>《整个巴黎属于我》</h2>
+                <p>"知道谈话结束，你可能才会发觉，其实你的那点见识他都知道，但是他就是很少表露出来。"
+                </p>
+            </div>
+        </div>
+    
+</body>
+</html>
