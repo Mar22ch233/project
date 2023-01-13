@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color:#f0f0f0;
+        }
+        #container{
+            position: relative;
+            width:70%;
+            height:670px;
+            margin-left: 18%;
+            margin-top: 30px;
+            display: inline-block;
+            border: solid 1px ;
+            margin-bottom: 50px;
+        }
+        #img:hover{
+            transform: rotateY(0deg) scale(1.04);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #nav{
+            position: fixed;
+            height: 160px;
+            margin-top: 90px;
+            margin-left: 10px;
+            width: 160px;
+            background-color: rgb(245, 236, 236);
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px #ccc,-10px -10px 20px white;
+        }
+        #nav>div{
+            height: 50px;
+            box-shadow: 10px 10px 20px #ccc,-10px -10px 20px white;
+            width: 140px;
+            display: block;
+            position: absolute;
+            left: 10px;
+            border-radius: 20px;
+        }
+
+        #nav>div:nth-child(1){
+            top: 20px;
+        }
+        #nav>div:nth-child(2){
+            top: 90px;
+        }
+        #nav>div:hover{
+            transform: rotateY(0deg) scale(1.04);
+            transition: 0.2s;
+            cursor: pointer;
+            background-color: rgb(179, 171, 171);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            text-align: center;
+            padding-top: 10px;
+        }
+        #contanier>div{
+            display: inline-block;
+            position: absolute;
+        }
+        #container>div:nth-child(1){
+            display: inline-block;
+            position: absolute;
+            right: 80px;
+            top: 180px;
+            
+        }
+        #container>div:nth-child(2){
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 40px;
+        }
+        #container>div:nth-child(3){
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 110px;
+            font-weight:100;
+            font-size: 20px;
+            font-family: Microsoft JhengHei;
+        }
+        #container>div:nth-child(4){
+            display: inline-block;
+            position: absolute;
+            right: 140px;
+            top: 260px;
+            width: 180px;
+            font-family: Microsoft JhengHei;
+        }
+        #container>div:nth-child(5){
+            display: inline-block;
+            position: absolute;
+            width: 540px;
+            top: 200px;
+            left: 40px;
+            font-family: Microsoft JhengHei;
+            font-size: 17px;
+            
+        }
+        
+        h1{
+            display: inline-block;
+            position: absolute;
+            top:20px;
+            left:40px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+        }
+        #bear{
+            margin-left: 130px;
+            margin-top: 30px;
+            font-size: large;
+        }
+        #bear1{
+            display: inline-block;
+            margin-right: 20px;
+            text-decoration: none;
+            
+        }
+        #bear2{
+            display: inline-block;
+
+        }
+        .bear2{
+            color: black;
+            text-decoration: underline;
+        }
+        .bear1{
+            color: grey;
+            text-decoration: none;
+        }
+        .bear1:hover{
+            color: black;
+        }
+        .second{
+            width:70%;
+            height: 1000px;
+            border: solid #333;
+            margin-left:20%;
+        }
+        #more{
+            color: grey;
+        }
+        #more:hover{
+            color: black;
+            transform: rotate(0deg) scale(1.5);
+            transition: 0.3s;
+        }
+        #second{
+            position: relative;
+            width:70%;
+            height:670px;
+            margin-left: 18%;
+            margin-top: 30px;
+            display: inline-block;
+            border: solid 1px ;
+            margin-bottom: 100px;
+            margin-top: 30px;
+        }
+        #second>div:nth-child(2){
+            display: inline-block;
+            position: absolute;
+            top: 120px;
+            left: 15%;
+        }
+        #second>div:nth-child(3){
+            display: inline-block;
+            position: absolute;
+            top: 120px;
+            left: 55%;
+        }
+        #poster2{
+            border-radius: 20px;
+
+        }
+        #poster3{
+            border-radius: 20px;
+        }
+        h3{
+            display: inline-block;
+            font-family:Microsoft JhengHei;
+            font-weight: 400;
+            font-size: 24px;
+        }
+        #second>div:nth-child(4){
+            display: inline-block;
+            position: absolute;
+            top: 550px;
+            left: 220px;
+        }
+        #second>div:nth-child(5){
+            display: inline-block;
+            position: absolute;
+            top: 550px;
+            left: 570px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bear">
+        <div id="bear1"><a class="bear1" href="home.html">Home</a></div>
+        <div id="bear2"><a class="bear2" href="about.html">About</a></div>
+    </div>
+
+    <div id="nav">
+        
+        <div>
+            <p><a class="e1" href="#bear">Book comment. </a></p>
+        </div>
+        <div>
+            <p><a class="e2" href="#second">Reasons for read.</a></p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div>
+            <img src="tip1.jpg" width="300" height="400">
+        </div>
+        <div>
+            <img src="back.jpg"  width="400" height="200">
+        </div>
+        <div>
+            <h2>《 蒙 马 特 遗 书 》</h2>
+        </div>
+        <div>
+            <p>因为看到了和作者一样痛苦、脆弱的部分，心忍不住痛了起来。虽然有这么多悲伤的事情，但正如附录部分陈雪所说得「人们崇拜一个死者，井由此得到生的力量，无论对于作青或读者而言，这是意义非凡的作品」就请好好阅读它吧。<br><br><a id="more" href="#">>more</a> </p>
+        </div>
+        <div>
+            <p>
+                • 看到「我日日夜夜止不佳地悲伤，不是为了世间的错误，不是为了身体的残败病痛，而是为了心灵的脆弱性及它所承受的伤害，我悲伤它承受了那么多的伤害，我疼惜自己能给予别人，给予世界那么多，却没办法使自己活得好过一点」想哭<br><br>
+                • 看到「世界井没有错，只是我受伤害了，我能真的消化我所受的伤害吗？如果我消化不了，那伤害就会一直伤害我的生命」想哭<br><br>
+                • 看到「我很复杂，却也很清澈；我的心思很深沉，但我的爱欲却已纯净，这也是我最美丽，叫我与众不同，在人群中闪闪发光之处」想哭<br><br>
+                • 看到Laurence说「没什么好匆忙的，您看起来很孤单」时，她回答说「因为我的心破碎了」想哭<br><br>
+                • 看到「太宰治常说：世人都在装模作样，世人令他恐惧」想哭；看到「司各特说人若不能心安理得地适应社会，适应大自然，就注定一生不幸」想哭<br><br>
+            </p>
+        </div>
+        <div>
+            <h1 id="bookcomment">
+                •Book comment
+            </h1>
+        </div>
+    </div>
+
+    <div id="second">
+        <div>
+            <h1 id="reason">
+                •Reason for read
+            </h1>
+        </div>
+        <div>
+            <img id="poster2" src="poster2.jpg" width="300" height="400">
+        </div>
+        <div>
+            <img id="poster3" src="poster3.jpg" width="300" height="400">
+        </div>
+        <div>
+            <h3>
+                •读万卷书 行万里路
+            </h3>
+        </div>
+        <div>
+            <h3>
+                •有时多一些知识就能跨过鸿沟
+            </h3>
+        </div>
+           
+    </div>
+</body>
+</html>
