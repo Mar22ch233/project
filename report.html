@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+           
+            background-color: #d7e7e5;
+        }
+        .shell{
+            position:fixed;
+            width: 280px;
+            height: 460px;
+            background-color: #b4c6c4;
+            display: inline-block;
+            margin-top: 120px;
+            border-radius: 20px;
+            margin-left: 150px;
+        }
+        .buttons{
+            margin: 60px 0;
+            color: #fff;
+        }
+        .li{
+            letter-spacing: 2px;
+            font: 600 17px '';
+            padding: 16px 52px;
+            transition: .3s;
+            border: 20px;
+        }
+        .li::after{
+            content: '';
+            position: absolute;
+            left: 20px;
+            margin-top: -22px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .buttons>li:hover{
+            background-color: #c6d7d5;
+        }
+        
+        .li ul{
+            width: 0;
+            height: 340px;
+            padding: 60px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: #8c8d91;
+            transition: .3s;
+            border-radius: 20px;
+        }
+
+        .li ul li{
+            padding: 16px 24px;
+            transition: .3s;
+        }
+
+        .li:hover ul{
+            width: 228px;
+        }
+        .li ul li:hover{
+            background-color: #b6c8c6;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        h1{
+            display: inline-block;
+            margin-top: 30px;
+            margin-left:640px;
+            font-weight: 300;
+        }
+        p{
+            font-family: Microsoft JhengHei;
+            font-size: 19px;
+            font-weight:300;
+            padding: 0 10px;
+        }
+        span{
+            font-family: Microsoft JhengHei;
+            font-size: 19px;
+            font-weight:600;
+        }
+
+        #person{
+            margin-top: 30px;
+            margin-left: 730px;
+            font-family: Microsoft JhengHei;
+            font-size: 20px;
+            font-weight:300;
+           
+        }
+        #introduce{
+            width:700px;
+            margin-top: 30px;
+            padding: 10px;
+            margin-left: 530px;
+            background-color:  #b6c8c6;
+            height: 140px;
+            border-radius: 6px;
+        }
+        #content1,#structure1,#basic1,#addition1,#process1,#word1{
+            margin-left: 540px;
+            display: block;
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        #content,#structure,#basic,#addition,#word{
+            width:600px;
+            margin-top: 20px;
+            
+            height: 280px;
+            margin-left: 580px;
+        }
+        #structure{
+            height:920px;
+        }
+        #basic{
+            height: 1260px;
+            
+            width: 680px;
+        }
+        img{
+            padding: 15px 45px;
+           
+        }
+        #process,#word{
+            width: 600px;
+            margin-top: 20px;
+            
+            margin-left: 580px;
+            background-color: #b6c8c6;
+            border-radius: 20px;
+        }
+
+        #paragraph{
+            padding: 15px 10px;
+        }
+        #word{
+            height: 520px;
+            margin-bottom: 138px;
+            position: relative;
+            
+
+        }
+        #addition{
+            height: 900px;
+            
+        }
+        #right{
+            margin-left: 80px;
+        }
+        button{
+            background-color:#b4c6c4 ;
+            border-radius: 15px;
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            font-size: 18px;
+            margin-left: 200px;
+            display: inline-block;
+            position: absolute;
+        }
+        button:hover{
+            background-color: #d7e7e5;
+            cursor: pointer;
+            transform: rotateY(0deg) scale(1.05);
+            transition: 0.3s;
+            
+        }
+        #button2{
+            display: inline-block;
+            left: 120px;
+            bottom: 30px;
+            position: absolute;
+            bottom: 30px;
+            top: 430px;
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="shell">
+        <ul class="buttons">
+            <li class="li">
+                基 本 信 息
+                <ul>
+                    <li><a href="#person1">人 员 信 息</a></li>
+                    <li><a href="#introduce1">设 计 理 念</a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                网 站 设 计
+                <ul>
+                    <li><a href="#content1">内 容 部 分 </a></li>
+                    <li><a href="#structure1">结 构 部 分 </a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                效 果 展 示
+                <ul>
+                    <li> <a href="#basic1">基 础 部 分  </a> </li>
+                    <li> <a href="#addition1">加 分 项 目</a> </li>
+                </ul>
+            </li>
+
+            <li class="li">
+                其       他
+                <ul>
+                    <li><a href="#process1"> 设 计 历 程</a></li>
+                    <li> <a href="#word1">自 我 评 价 </a></li>
+                    <li><a href="#word1">总 结 展 望</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="title">
+        <h1> 关于「 Read With Me 」的一份报告</h1>
+    </div>
+
+    <div id="person">
+        <p>软件工程2211班 郑芷毓 0223543</p>
+    </div>
+
+    <div id="introduce">
+        <p><span>  网站介绍：</span>这次大作业做的是一个以 <span>「极简」</span>为核心的阅读网站。自从着手开始准备大作业，就因为选题问题陷入纠结，而阅读主题的想法来源于身边放假后的大学生朋友们，他们中的很多一部分在放假后就不知道做什么，常常问我，有没有什么不看手机的娱乐活动，我想了很久，我觉得<span>「看一本书」</span>，是我能想到的最好的答案，于是，这个网站它来了。</p>
+    </div>
+
+    <span id="content1">
+      >  关于内容
+    </span>
+    <div id="content">
+        <span>  •  关于图片</span><br>
+        <p>网站中排版以及设计均为原创，内含自己设计的背景图片和文案，引用类文字均已打上双引号，下面是一些图片的出处。</p>
+        <p><span>1 ) </span>博主：@深陷月亮</p>
+        <p><span>2 ) </span>句读app：每日一言</p>
+        <p><span>3 ) </span>当当网</p><br>
+        <span>  •  关于内附链接</span>
+        <p><span>1 ) </span>当当网购买链接</p>
+        <p><span>2 ) </span>豆瓣读书书目链接</p>
+    </div>
+
+    <span id="structure1">
+        >  关于结构
+    </span>
+    <div id="structure">
+        <span> • 主页和子页 </span>
+        <p> <span>1 ) </span>整个作业中包含一个<span>「 index 」</span>主页，还有一个名为<span>「 Home 」</span>的前页。</p>
+        <p> <span>2 ) </span>index主页中包含一个<span>「 join 」</span>登录页面，<span> 4 </span>个悬浮展示页面。</p>
+        <p> <span>3 ) </span>home前页中包含一个 <span>「 about 」</span>子页。</p>
+        <p> <span>4 ) </span>包含主页和报告在内一共<span>「 9 」</span>个子页。</p>
+        <p> <span>5 ) </span>所有页面均可以通过跳转链接访问。</p><br>
+        <span> • 展示</span>
+        <table>
+            <tr>
+                <td><p><span>1 ) Home</span></p></td>
+                <td><p><span>2 ) about</span></p></td>
+            </tr>
+            <tr>
+                <td><img src="home.png"  width="288" height="158"></td>
+                <td><img src="about.png"  width="288" height="158"></td>
+            </tr>
+            <tr>
+                <td><p><span>3 ) index</span></p></td>
+                <td><p><span>4 ) join</span></p></td>
+            </tr>
+            <tr>
+                <td><img src="index.png" width="288" height="158"></td>
+                <td><img src="join.png" width="288" height="158"></td>
+            </tr>
+            <tr>
+                <td><p><span>5 )悬浮展示页面 </span></p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><img src="show.png" width="288" height="158"></td>
+                <td><img src="show1.png" width="288" height="158"></td>
+            </tr>
+        </table>
+    </div>
+
+    <span id="basic1"> > 关于基本要求</span>
+    <div id="basic">
+        <br>
+        <p> <span>1 ) </span>主页和报告页面都使用了<span>「 表格 」</span>做了图片和文字并列的列举。</p><br>
+        <p> <span>2 ) </span><span>「 position 」</span>和<span>「 float 」</span>定位在主页和前页中都有出现。</p><br>
+        <p> <span>3 ) </span>index主页有<span>「 二级导航栏 」</span>。</p>
+        <img  id="right" src="a.png" width="200" height="200">
+        <p> <span>4 ) </span>about子页中有<span>「 侧边栏 」</span> </p>
+        <img id="right" src="b.png" width="200" height="200">
+        <p> <span>5 ) </span>文字和按钮等都使用<span>「伪类」</span>做了动态效果。</p>
+        <img id="right" src="gif3.gif" width="200" height="200">
+        <p> <span>6 ) </span>文字悬浮于图片之上。</p>
+        <img id="right" src="d.png" width="250" height="300">
+    </div>
+
+    <span id="addition1"> > 关于附加部分 </span>
+    <div id="addition">
+        <br>
+        <p><span> 1 ) </span>在主页页脚上方有<span>「 返回顶部 」</span>按钮。</p><br>
+        <img src="GIF.gif" width="300" height="200">
+        <p><span> 2 ) </span>悬浮展示页中运用了<span>「 flex布局 」 </span>且加入了<span>「 动态效果 」。</span></p><br>
+        <img src="gif4.gif" width="300" height="200">
+        <p><span> 3 ) </span>侧边栏对盒子x,y轴的<span>「 正负方向 」</span>正负方向都加上了阴影，且使用了 <span>「 圆角边框 」</span>圆角边框。</p><br>
+        <img src="gif1.gif" width="230" height="200">
+    </div>
+
+    <span id="process1"> > 关于设计历程 </span>
+    <div id="process">
+        <br>
+        <p id="paragragh"> • 在开始制作这个网页之前，我设想和构思了很久，也观摩，学习了非常多现代的比较成熟的网站，而我发现他们中的很大一部分都特别干净，特别简洁，并且观感很舒服。所以设计之初我就希望我自己的这个网页也能够整体贯穿 <span>「 Less Is More 」 </span>这个概念，并且我也在不停的寻找，花了很多心思对比和试错，最终调试出了这一些看起来舒服且和谐的网页配色。<br><br>
+         • 在制作主页导航栏的过程中，我为了试网页看起来更干净，并没有制作二级导航栏，后来在添加二级导航栏了过程中也遇到了一些问题，因为原始的一些命名和布局不适合直接添加，我删删改改走了好多弯路，到后面实在无法找到正确改法，于是我重做了整个页头，更换了所有id和class的命名，这是困扰我比较久的一个地方。<br><br> • 之前也有想过插入图标库做一个伸缩侧边栏，但是总是无法引入链接所以就放弃了。</p><br>
+    </div>
+
+    <span id="word1"> > 关于我想说的 </span>
+    <div id="word">
+        <p id="paragraph">•  在完成这个大作业的整个过程中，我能明显感觉到自己是在进步的。从整个页面的制作来看，后制作的页面明显更优一些。我对于网站的整个设计和布局有了更加清楚的认识，实际操作的速度也比以前快了许多，之前有些模糊的概念也在完成作业的过程中一点一点变得清晰。我自己认为我的优点在于：</p>
+        <p><span> 1 ) </span>页面比较简洁，但又有点设计感。</p><br>
+        <p><span> 2 ) </span>配色和谐，让人的观感很舒服。</p><br>
+        <p><span> 3 ) </span>完成度较高，比较充分展示了一个学期所学的成果。</p><br>
+        <p id="paragraph">•  我认为这个网页可以优化的地方还有很多，因为没有自学一些js所以网站整个看起来没有那么生动，我把自己学过的所有css全部用上了，但看起来还是有些差强人意，但我觉得这不是我的上限，多给我一点时间，学习了js，我相信我能做的更好。</p>
+        <div ><button><a href="home.html"> Home</button></a></div>
+        <div id="button2"><button><a href="index.html">Main</a></button></div>
+    </div>
+    
+    
+</body>
+</html>
